@@ -3,35 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Draft Punk - A new wave of creativity, experimentation, and bold digital expressions">
     <title>Draft Punk</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-        img {
-            max-width: 80%;
-            height: auto;
-            margin-bottom: 2rem;
-        }
-        p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            line-height: 1.5;
-        }
-    </style>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="draftpunk-logo.png" alt="Draft Punk Logo">
-    <p>Welcome to <strong>draftpunk.me</strong> – A new wave of creativity, experimentation, and bold digital expressions. Something awesome is coming soon. Stay tuned.</p>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo-text">Draft Punk</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="imprint.html" class="nav-link">Imprint</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="centered">
+        <div class="carousel-container">
+            <img src="draftpunk-logo.png" alt="Draft Punk Logo" class="carousel-image active">
+            <img src="draftpunklogoballoon.png" alt="Draft Punk Balloon Logo" class="carousel-image">
+            <img src="draftpunklogofluff.png" alt="Draft Punk Fluff Logo" class="carousel-image">
+        </div>
+        
+        <p class="intro-text">Welcome to <strong>draftpunk.me</strong> – A new wave of creativity, experimentation, and bold digital expressions. Something awesome is coming soon. Stay tuned.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <span class="footer-separator">|</span>
+                <a href="about.html" class="footer-link">About</a>
+                <span class="footer-separator">|</span>
+                <a href="imprint.html" class="footer-link">Imprint</a>
+            </div>
+            <div class="footer-copyright">
+                © 2024 Draft Punk. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
