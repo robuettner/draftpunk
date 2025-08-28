@@ -1,0 +1,26 @@
+{
+  "name": "draft-punk",
+  "version": "1.0.0",
+  "description": "Draft Punk - A new wave of creativity, experimentation, and bold digital expressions",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "draft-punk",
+    "creative",
+    "digital-art",
+    "web-design"
+  ],
+  "author": "Draft Punk",
+  "license": "All rights reserved",
+  "homepage": "https://draftpunk.me",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/draft-punk.git"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
