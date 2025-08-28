@@ -1,0 +1,271 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Cantata One', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Cantata One', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 2rem 0 1rem;
+    color: #fff;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Material Icons */
+.material-icons-outlined,
+.material-icons-sharp {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons Outlined';
+}
+
+.material-icons-sharp {
+    font-family: 'Material Icons Sharp';
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo-text {
+    font-family: 'Cantata One', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 100px 20px 40px;
+}
+
+main.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+main.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Home Page Specific */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+.carousel-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+/* Imprint Page Specific */
+.contact-info {
+    margin: 1rem 0;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    padding: 0 0.5rem;
+}
+
+.footer-link:hover {
+    color: #e0e0e0;
+}
+
+.footer-separator {
+    color: #555;
+    font-size: 0.8rem;
+}
+
+.footer-copyright {
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #121212;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+        border-top: 1px solid #333;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .carousel-container {
+        width: 90%;
+        height: 300px;
+    }
+}
